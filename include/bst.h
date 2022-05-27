@@ -32,13 +32,14 @@ class BST {
     if (nullptr == root) {
       return 0;
     } else {
-      if (root->value == value) {
-        return root->count;
-      } else if (root->value < value) {
-               return searchNode(root->right, value);
-             } else {
-                 return searchNode(root->left, value);
-               }
+        if (root->value == value) {
+          return root->count;
+        } else if (root->value < value) {
+                 return searchNode(root->right, value);
+               } else {
+                   return searchNode(root->left, value);
+                 }
+      }
   }
   int depthTree(Node *root) {
     int leftt, rightt;
@@ -51,7 +52,7 @@ class BST {
     return (leftt > rightt) ? (++leftt) : (++rightt);
   }
   }
- 
+
  public:
   BST() : root(nullptr) {}
   ~BST() {}
