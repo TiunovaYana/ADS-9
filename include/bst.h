@@ -51,6 +51,7 @@ class BST {
     return (leftt > rightt) ? (++leftt) : (++rightt);
   }
   }
+ 
  public:
   BST() : root(nullptr) {}
   ~BST() {}
